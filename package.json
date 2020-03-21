@@ -16,7 +16,8 @@
     "test": "karma start",
     "test-watch": "karma start --no-single-run",
     "test-run": "karma run",
-    "build": "npm run compile && npm run test && npm run dev && npm run prod"
+    "parcel": "parcel build src/index.js --out-dir=dist",
+    "build": "npm run compile && npm run parcel"
   },
   "keywords": [
     "riotjs",
@@ -37,14 +38,15 @@
     "url": "https://github.com/black-trooper/semantic-ui-riot/issues"
   },
   "dependencies": {
+    "@riotjs/observable": "^4.0.4",
     "date-fns": "^1.29.0",
     "q": "^1.5.1",
-    "riot": "4.6.6",
-    "riot-observable": "^3.0.0"
+    "riot": "4.11.0"
   },
   "devDependencies": {
     "@riotjs/cli": "^4.0.2",
     "@riotjs/compiler": "4.5.2",
+    "@riotjs/parcel-plugin-riot": "^4.0.1",
     "@riotjs/webpack-loader": "^4.0.1",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.4",
@@ -67,6 +69,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^4.0.2",
     "mocha": "^4.0.1",
+    "parcel-bundler": "^1.12.4",
     "sinon": "^2.1.0",
     "sinon-chai": "^2.13.0",
     "uuid": "^3.3.3",

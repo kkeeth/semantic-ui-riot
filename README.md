@@ -91,7 +91,7 @@ index.html
 </head>
 <body>
   <div id="app"></div>
-  <script src="main.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
 ```
