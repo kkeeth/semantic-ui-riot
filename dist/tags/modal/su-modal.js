@@ -142,7 +142,7 @@ var suModal = {
 
   'template': function(template, expressionTypes, bindingTypes, getComponent) {
     return template(
-      '<div expr16="expr16"><div expr17="expr17"><i expr18="expr18" class="close icon"></i><div expr19="expr19"></div><div expr21="expr21"><slot expr22="expr22"></slot></div><div class="actions"><button expr23="expr23" type="button"></button></div></div></div>',
+      '<div expr44="expr44"><div expr45="expr45"><i expr46="expr46" class="close icon"></i><div expr47="expr47"></div><div expr49="expr49"><slot expr50="expr50"></slot></div><div class="actions"><button expr51="expr51" type="button"></button></div></div></div>',
       [{
         'expressions': [{
           'type': expressionTypes.EVENT,
@@ -167,8 +167,8 @@ var suModal = {
           }
         }]
       }, {
-        'redundantAttribute': 'expr16',
-        'selector': '[expr16]',
+        'redundantAttribute': 'expr44',
+        'selector': '[expr44]',
 
         'expressions': [{
           'type': expressionTypes.ATTRIBUTE,
@@ -179,8 +179,8 @@ var suModal = {
           }
         }]
       }, {
-        'redundantAttribute': 'expr17',
-        'selector': '[expr17]',
+        'redundantAttribute': 'expr45',
+        'selector': '[expr45]',
 
         'expressions': [{
           'type': expressionTypes.ATTRIBUTE,
@@ -204,18 +204,11 @@ var suModal = {
           return scope.closable && !scope.basic;
         },
 
-        'redundantAttribute': 'expr18',
-        'selector': '[expr18]',
+        'redundantAttribute': 'expr46',
+        'selector': '[expr46]',
 
         'template': template(null, [{
           'expressions': [{
-            'type': expressionTypes.ATTRIBUTE,
-            'name': 'class',
-
-            'evaluate': function(scope) {
-              return 'close icon';
-            }
-          }, {
             'type': expressionTypes.EVENT,
             'name': 'onclick',
 
@@ -231,10 +224,10 @@ var suModal = {
           return scope.header;
         },
 
-        'redundantAttribute': 'expr19',
-        'selector': '[expr19]',
+        'redundantAttribute': 'expr47',
+        'selector': '[expr47]',
 
-        'template': template('<i expr20="expr20"></i> ', [{
+        'template': template('<i expr48="expr48"></i> ', [{
           'expressions': [{
             'type': expressionTypes.TEXT,
             'childNodeIndex': 1,
@@ -257,8 +250,8 @@ var suModal = {
             return scope.header.icon;
           },
 
-          'redundantAttribute': 'expr20',
-          'selector': '[expr20]',
+          'redundantAttribute': 'expr48',
+          'selector': '[expr48]',
 
           'template': template(null, [{
             'expressions': [{
@@ -272,8 +265,8 @@ var suModal = {
           }])
         }])
       }, {
-        'redundantAttribute': 'expr21',
-        'selector': '[expr21]',
+        'redundantAttribute': 'expr49',
+        'selector': '[expr49]',
 
         'expressions': [{
           'type': expressionTypes.ATTRIBUTE,
@@ -287,14 +280,14 @@ var suModal = {
         'type': bindingTypes.SLOT,
         'attributes': [],
         'name': 'default',
-        'redundantAttribute': 'expr22',
-        'selector': '[expr22]'
+        'redundantAttribute': 'expr50',
+        'selector': '[expr50]'
       }, {
         'type': bindingTypes.EACH,
         'getKey': null,
         'condition': null,
 
-        'template': template(' <i expr24="expr24"></i>', [{
+        'template': template(' <i expr52="expr52"></i>', [{
           'expressions': [{
             'type': expressionTypes.TEXT,
             'childNodeIndex': 0,
@@ -318,13 +311,6 @@ var suModal = {
             }
           }, {
             'type': expressionTypes.ATTRIBUTE,
-            'name': 'type',
-
-            'evaluate': function(scope) {
-              return 'button';
-            }
-          }, {
-            'type': expressionTypes.ATTRIBUTE,
             'name': 'class',
 
             'evaluate': function(scope) {
@@ -338,8 +324,8 @@ var suModal = {
             return scope.button.icon;
           },
 
-          'redundantAttribute': 'expr24',
-          'selector': '[expr24]',
+          'redundantAttribute': 'expr52',
+          'selector': '[expr52]',
 
           'template': template(null, [{
             'expressions': [{
@@ -353,8 +339,8 @@ var suModal = {
           }])
         }]),
 
-        'redundantAttribute': 'expr23',
-        'selector': '[expr23]',
+        'redundantAttribute': 'expr51',
+        'selector': '[expr51]',
         'itemName': 'button',
         'indexName': null,
 

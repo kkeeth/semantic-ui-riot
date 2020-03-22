@@ -21,7 +21,7 @@ var suValidationError = {
 
   'template': function(template, expressionTypes, bindingTypes, getComponent) {
     return template(
-      '<div expr73="expr73" class="ui basic pointing prompt label transition visible"></div><ul expr75="expr75" class="list"></ul>',
+      '<div expr97="expr97" class="ui basic pointing prompt label transition visible"></div><ul expr99="expr99" class="list"></ul>',
       [{
         'expressions': [{
           'type': expressionTypes.ATTRIBUTE,
@@ -38,19 +38,10 @@ var suValidationError = {
           return scope.state.errors[scope.props.name];
         },
 
-        'redundantAttribute': 'expr73',
-        'selector': '[expr73]',
+        'redundantAttribute': 'expr97',
+        'selector': '[expr97]',
 
-        'template': template('<div expr74="expr74"></div>', [{
-          'expressions': [{
-            'type': expressionTypes.ATTRIBUTE,
-            'name': 'class',
-
-            'evaluate': function(scope) {
-              return 'ui basic pointing prompt label transition visible';
-            }
-          }]
-        }, {
+        'template': template('<div expr98="expr98"></div>', [{
           'type': bindingTypes.EACH,
           'getKey': null,
           'condition': null,
@@ -66,8 +57,8 @@ var suValidationError = {
             }]
           }]),
 
-          'redundantAttribute': 'expr74',
-          'selector': '[expr74]',
+          'redundantAttribute': 'expr98',
+          'selector': '[expr98]',
           'itemName': 'message',
           'indexName': null,
 
@@ -82,24 +73,15 @@ var suValidationError = {
           return scope.state.blockMessage;
         },
 
-        'redundantAttribute': 'expr75',
-        'selector': '[expr75]',
+        'redundantAttribute': 'expr99',
+        'selector': '[expr99]',
 
-        'template': template('<template expr76="expr76"></template>', [{
-          'expressions': [{
-            'type': expressionTypes.ATTRIBUTE,
-            'name': 'class',
-
-            'evaluate': function(scope) {
-              return 'list';
-            }
-          }]
-        }, {
+        'template': template('<template expr100="expr100"></template>', [{
           'type': bindingTypes.EACH,
           'getKey': null,
           'condition': null,
 
-          'template': template('<li expr77="expr77"></li>', [{
+          'template': template('<li expr101="expr101"></li>', [{
             'type': bindingTypes.EACH,
             'getKey': null,
             'condition': null,
@@ -115,8 +97,8 @@ var suValidationError = {
               }]
             }]),
 
-            'redundantAttribute': 'expr77',
-            'selector': '[expr77]',
+            'redundantAttribute': 'expr101',
+            'selector': '[expr101]',
             'itemName': 'message',
             'indexName': null,
 
@@ -125,8 +107,8 @@ var suValidationError = {
             }
           }]),
 
-          'redundantAttribute': 'expr76',
-          'selector': '[expr76]',
+          'redundantAttribute': 'expr100',
+          'selector': '[expr100]',
           'itemName': 'errors',
           'indexName': null,
 

@@ -9,7 +9,7 @@ module.exports = function (config) {
       'test/spec/**/*'
     ],
     preprocessors: {
-      'test/spec/**/*.js': ['webpack', 'sourcemap'],
+      'test/spec/**/*.js': ['parcel', 'sourcemap'],
     },
     webpack: {
       devtool: 'inline-source-map',
